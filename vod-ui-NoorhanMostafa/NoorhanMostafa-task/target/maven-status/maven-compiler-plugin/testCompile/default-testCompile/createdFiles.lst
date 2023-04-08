@@ -1,0 +1,8 @@
+org\example\pages\P01_homePage.class
+org\example\pages\P04_checkoutPage.class
+org\example\fileReaders\FileReaders.class
+org\example\testRunners\testRunner.class
+org\example\pages\P02_productPage.class
+org\example\stepDefs\Hooks.class
+org\example\pages\P03_cartPage.class
+org\example\stepDefs\S01_makeOrderStepDef.class
