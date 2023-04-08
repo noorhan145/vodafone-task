@@ -22,7 +22,7 @@ public class P01_homePage {
 
     public WebElement productTitle()
     {
-        return driver.findElement(By.xpath("(//a[@class=\"productList-cardLink\"])[1]"));
+        return driver.findElement(By.xpath("(//a[@class=\"productList-cardLink\"])[4]"));
     }
 
     public WebElement addToCartBtn()
@@ -30,7 +30,7 @@ public class P01_homePage {
         return driver.findElement(By.xpath("//button[@class=\"btn btn-red btn-block fontLightEnAr\"]"));
     }
 
-    public WebElement CartIcon()
+    public WebElement cartIcon()
     {
         return driver.findElement(By.xpath("(//div[@class=\"ui-icon ui-icon-small shoppingCart\"])[1]"));
     }

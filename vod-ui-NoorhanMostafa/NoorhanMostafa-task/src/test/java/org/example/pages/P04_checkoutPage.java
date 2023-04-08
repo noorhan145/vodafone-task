@@ -8,12 +8,12 @@ import static org.example.stepDefs.Hooks.driver;
 public class P04_checkoutPage {
     public WebElement cityDropdown()
     {
-        return driver.findElement(By.xpath("//select[@class=\"btn dropdown-toggle checkout-dropdown border-radius_Style checkoutDeliveryFamilyFont ng-pristine ng-valid ng-touched\"]"));
+        return driver.findElement(By.xpath("//div[@class=\"col-md-4 col-sm-12 checkout-dropdownCity checkoutDeleiveryOptionsPhase2EditWidth\"]/select"));
     }
 
     public WebElement districtDropdown()
     {
-        return driver.findElement(By.xpath("//select[@class=\"btn dropdown-toggle checkout-dropdown border-radius_Style checkoutDeliveryFamilyFont ng-pristine ng-valid ng-touched\"]"));
+        return driver.findElement(By.xpath("(//select[@class=\"btn dropdown-toggle checkout-dropdown border-radius_Style checkoutDeliveryFamilyFont ng-pristine ng-valid ng-touched\"])[2]"));
     }
 
     public WebElement DelivaryToAddressBtn()

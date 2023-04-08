@@ -1,30 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: org.example.testRunners.testRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 76.375 s <<< FAILURE! - in org.example.testRunners.testRunner
-org.example.testRunners.testRunner.runScenario  Time elapsed: 73.849 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 168.332 s <<< FAILURE! - in org.example.testRunners.testRunner
+org.example.testRunners.testRunner.runScenario  Time elapsed: 165.7 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class="btn btn-red btn-block fontLightEnAr"]"}
   (Session info: chrome=112.0.5615.50)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52759d2bc3df13debd62308e2fc3a7e7, clickElement {id=46104b18-1788-4242-97bb-9c41895d0f13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\noorh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53486/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (52759d2bc3df13debd62308e2fc3a7e7)] -> xpath: //a[@href="/shop/shopByBrand/Apple"]]
-Session ID: 52759d2bc3df13debd62308e2fc3a7e7
-
-org.example.testRunners.testRunner.runScenario  Time elapsed: 73.852 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=112.0.5615.50)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52759d2bc3df13debd62308e2fc3a7e7, clickElement {id=46104b18-1788-4242-97bb-9c41895d0f13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\noorh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53486/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (52759d2bc3df13debd62308e2fc3a7e7)] -> xpath: //a[@href="/shop/shopByBrand/Apple"]]
-Session ID: 52759d2bc3df13debd62308e2fc3a7e7
+Command: [43c840cd7bd4e6784cf0d4160954df97, findElement {using=xpath, value=//button[@class="btn btn-red btn-block fontLightEnAr"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\noorh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52747/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 43c840cd7bd4e6784cf0d4160954df97
 

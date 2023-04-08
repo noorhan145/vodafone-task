@@ -8,6 +8,7 @@ import org.example.pages.P01_homePage;
 import org.example.pages.P02_productPage;
 import org.example.pages.P03_cartPage;
 import org.example.pages.P04_checkoutPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -33,11 +34,12 @@ public class S01_makeOrderStepDef {
     }
 
     @And("user go to “Shop By Brand” section and select “Iphone”")
-    public void selectIphone(){
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        //wait.until(ExpectedConditions.visibilityOf(homePage.iphoneIcon())).click();
-        //homePage.iphoneIcon().click();
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", homePage.iphoneIcon());
+    public void selectIphone() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("javascript:window.scrollBy(0,250);");
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
+        //wait.until(ExpectedConditions.visibilityOf(homePage.iphoneIcon()));
+        //wait.until(ExpectedConditions.elementToBeClickable(homePage.iphoneIcon()));
+        //Thread.sleep(10000);
         homePage.iphoneIcon().click();
     }
 
@@ -46,9 +48,6 @@ public class S01_makeOrderStepDef {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(homePage.productTitle()));
         homePage.productTitle().click();
-        //Actions actions = new Actions(driver);
-        //actions.moveToElement(homePage.productTitle());
-        //actions.perform();
 
     }
 
@@ -59,16 +58,25 @@ public class S01_makeOrderStepDef {
 
     @And("user press at cart icon")
     public void pressCartIcon(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.elementToBeClickable(homePage.addToCartBtn()));
         homePage.addToCartBtn().click();
+        //homePage.cartIcon().click();
+
     }
 
     @And("user press Proceed to Checkout")
     public void pressProceedToCheckout(){
+        ((JavascriptExecutor) driver).executeScript("javascript:window.scrollBy(0,500);");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.elementToBeClickable(cartPage.ProceedToCheckoutBtn()));
         cartPage.ProceedToCheckoutBtn().click();
     }
 
     @And("user select “Delivery Options” as “Cairo” “Ain Shams”")
     public void selectDeliveryOptions(){
+
+        ((JavascriptExecutor) driver).executeScript("javascript:window.scrollBy(0,250);");
         Select cityDropdown = new Select(checkoutPage.cityDropdown());
         cityDropdown.selectByVisibleText(FileReaders.getPropertyByKey("configData.properties", "city"));
         Select distinctDropdown = new Select(checkoutPage.districtDropdown());
@@ -86,6 +94,10 @@ public class S01_makeOrderStepDef {
         checkoutPage.buildingNoField().sendKeys(FileReaders.getPropertyByKey("configData.properties", "buildingNo"));
         checkoutPage.floorNoField().sendKeys(FileReaders.getPropertyByKey("configData.properties", "floorNo"));
         checkoutPage.apartmentNoField().sendKeys(FileReaders.getPropertyByKey("configData.properties", "apartmentNo"));
+        checkoutPage.landmarkField().sendKeys(FileReaders.getPropertyByKey("configData.properties", "landmark"));
+        checkoutPage.addressNameField().sendKeys(FileReaders.getPropertyByKey("configData.properties", "addressName"));
+
+
     }
 
     @And("user press continue after fill address")

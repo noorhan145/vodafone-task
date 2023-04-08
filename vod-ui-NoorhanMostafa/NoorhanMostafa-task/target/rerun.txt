@@ -1,2 +1,1 @@
-file:src/main/resources/features/F02_makeOrder.feature:4
 file:src/main/resources/features/F01_makeOrder.feature:4

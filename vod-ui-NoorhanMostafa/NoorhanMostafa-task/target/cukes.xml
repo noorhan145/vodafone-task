@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="74.04" tests="2" skipped="0" failures="2" errors="0">
-<testcase classname="F02_makeOrder | users could make order" name="guest user" time="73.675">
-<failure type="org.openqa.selenium.StaleElementReferenceException" message="stale element reference: element is not attached to the page document
+<testsuite name="Cucumber" time="165.881" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="F01_makeOrder | users could make order" name="guest user could select random product and make an order" time="165.517">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&quot;btn btn-red btn-block fontLightEnAr&quot;]&quot;}
   (Session info: chrome=112.0.5615.50)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52759d2bc3df13debd62308e2fc3a7e7, clickElement {id=46104b18-1788-4242-97bb-9c41895d0f13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\noorh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53486/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (52759d2bc3df13debd62308e2fc3a7e7)] -&gt; xpath: //a[@href=&quot;/shop/shopByBrand/Apple&quot;]]
-Session ID: 52759d2bc3df13debd62308e2fc3a7e7">
-<![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+Command: [43c840cd7bd4e6784cf0d4160954df97, findElement {using=xpath, value=//button[@class=&quot;btn btn-red btn-block fontLightEnAr&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\noorh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52747/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 43c840cd7bd4e6784cf0d4160954df97">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class="btn btn-red btn-block fontLightEnAr"]"}
   (Session info: chrome=112.0.5615.50)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52759d2bc3df13debd62308e2fc3a7e7, clickElement {id=46104b18-1788-4242-97bb-9c41895d0f13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\noorh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53486/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (52759d2bc3df13debd62308e2fc3a7e7)] -> xpath: //a[@href="/shop/shopByBrand/Apple"]]
-Session ID: 52759d2bc3df13debd62308e2fc3a7e7
+Command: [43c840cd7bd4e6784cf0d4160954df97, findElement {using=xpath, value=//button[@class="btn btn-red btn-block fontLightEnAr"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\noorh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52747/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 43c840cd7bd4e6784cf0d4160954df97
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -32,70 +30,20 @@ Session ID: 52759d2bc3df13debd62308e2fc3a7e7
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.example.stepDefs.S01_makeOrderStepDef.selectIphone(S01_makeOrderStepDef.java:41)
-	at ?.user go to �Shop By Brand� section and select �Iphone�(file:///F:/Desktop/sw%20testing/Java/NoorhanMostafa-task/src/main/resources/features/F02_makeOrder.feature:6)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.example.pages.P02_productPage.addToCartBtn(P02_productPage.java:11)
+	at org.example.stepDefs.S01_makeOrderStepDef.addToCart(S01_makeOrderStepDef.java:56)
+	at ?.user press add to cart(file:///F:/Desktop/sw%20testing/Java/NoorhanMostafa-task/src/main/resources/features/F01_makeOrder.feature:8)
 ]]>
 </failure>
 <system-out><![CDATA[
 When user select language as “English”......................................passed
-And user go to “Shop By Brand” section and select “Iphone”..................failed
-And user select any of returned iphone mobiles..............................skipped
-And user press add to cart..................................................skipped
-And user press at cart icon.................................................skipped
-And user press Proceed to Checkout..........................................skipped
-And user select “Delivery Options” as “Cairo” “Ain Shams”...................skipped
-And user select “Deliver to My Address”.....................................skipped
-And user add address details................................................skipped
-And user press continue after fill address..................................skipped
-And user Leave Personal info. Tab empty and press continue..................skipped
-Then error message returned from “Full Name” field..........................skipped
-]]></system-out>
-</testcase>
-<testcase classname="F01_makeOrder | users could make order" name="guest user could select random product and make an order" time="73.677">
-<failure type="org.openqa.selenium.StaleElementReferenceException" message="stale element reference: element is not attached to the page document
-  (Session info: chrome=112.0.5615.50)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52759d2bc3df13debd62308e2fc3a7e7, clickElement {id=46104b18-1788-4242-97bb-9c41895d0f13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\noorh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53486/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (52759d2bc3df13debd62308e2fc3a7e7)] -&gt; xpath: //a[@href=&quot;/shop/shopByBrand/Apple&quot;]]
-Session ID: 52759d2bc3df13debd62308e2fc3a7e7">
-<![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=112.0.5615.50)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_362'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52759d2bc3df13debd62308e2fc3a7e7, clickElement {id=46104b18-1788-4242-97bb-9c41895d0f13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\noorh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53486/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (52759d2bc3df13debd62308e2fc3a7e7)] -> xpath: //a[@href="/shop/shopByBrand/Apple"]]
-Session ID: 52759d2bc3df13debd62308e2fc3a7e7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.example.stepDefs.S01_makeOrderStepDef.selectIphone(S01_makeOrderStepDef.java:41)
-	at ?.user go to �Shop By Brand� section and select �Iphone�(file:///F:/Desktop/sw%20testing/Java/NoorhanMostafa-task/src/main/resources/features/F01_makeOrder.feature:6)
-]]>
-</failure>
-<system-out><![CDATA[
-When user select language as “English”......................................passed
-And user go to “Shop By Brand” section and select “Iphone”..................failed
-And user select any of returned iphone mobiles..............................skipped
-And user press add to cart..................................................skipped
+And user go to “Shop By Brand” section and select “Iphone”..................passed
+And user select any of returned iphone mobiles..............................passed
+And user press add to cart..................................................failed
 And user press at cart icon.................................................skipped
 And user press Proceed to Checkout..........................................skipped
 And user select “Delivery Options” as “Cairo” “Ain Shams”...................skipped

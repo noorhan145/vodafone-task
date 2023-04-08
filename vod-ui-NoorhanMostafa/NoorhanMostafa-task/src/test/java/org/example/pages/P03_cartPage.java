@@ -8,6 +8,6 @@ import static org.example.stepDefs.Hooks.driver;
 public class P03_cartPage {
     public WebElement ProceedToCheckoutBtn()
     {
-        return driver.findElement(By.className("btn btn-red"));
+        return driver.findElement(By.xpath("//button[@class=\"btn btn-red\"]"));
     }
 }
